@@ -49,6 +49,8 @@ def percentile(values: List[float], n: float) -> float:
     :param n: percentage / 100 : 0 < n < 1
     :return: percentile value
     """
+    if len(values) == 1:
+        return values[0]
     values = sorted(values)
     float_index = n*(len(values)-1)
     i = int(float_index)
