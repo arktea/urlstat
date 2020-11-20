@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "urlstat"
+version = "0.1.0"
+description = "Display some statistics on HTTP response times for a list of urls."
+authors = ["Thibaut Frain <thibaut.frain@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+httpx = "^0.16.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+pytest-httpx = "^0.10.0"
+pytest-asyncio = "^0.14.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
